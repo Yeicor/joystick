@@ -1,9 +1,8 @@
 """See README.md for package documentation."""
 
-from setuptools import setup, find_namespace_packages
-
 from io import open
 from os import path
+from setuptools import setup
 
 here = path.abspath(path.dirname(__file__))
 
@@ -13,7 +12,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 URL = 'https://github.com/Yeicor/kivy-joystick'
 
 setup(
-    name='kivy_garden.joystick',
+    name='kivy-joystick',
     version='0.0.1',
     description='A on screen joystick for Kivy.',
     long_description=long_description,
@@ -35,9 +34,9 @@ setup(
     ],
     keywords='Kivy kivy-garden',
 
-    packages=find_namespace_packages(include=['*']),
+    packages=['kivy-joystick'],
     install_requires=[],
-    package_data={},
+    package_data={'kivy-joystick': ['*.kv']},
     data_files=[],
     entry_points={},
     project_urls={
