@@ -9,10 +9,10 @@ here = path.abspath(path.dirname(__file__))
 with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
-URL = 'https://github.com/Yeicor/kivy-joystick'
+URL = 'https://github.com/Yeicor/joystick'
 
 setup(
-    name='kivy-joystick',
+    name='joystick',
     version='0.0.1',
     description='A on screen joystick for Kivy.',
     long_description=long_description,
@@ -34,9 +34,9 @@ setup(
     ],
     keywords='Kivy kivy-garden',
 
-    packages=['kivy-joystick'],
+    packages=['joystick'],
     install_requires=[],
-    package_data={'kivy-joystick': ['*.kv']},
+    package_data={'joystick': ['*.kv']},
     data_files=[],
     entry_points={},
     project_urls={
